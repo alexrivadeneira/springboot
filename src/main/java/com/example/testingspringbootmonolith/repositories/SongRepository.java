@@ -1,4 +1,7 @@
 package com.example.testingspringbootmonolith.repositories;
 
-public interface SongRepository {
+import com.example.testingspringbootmonolith.models.Song;
+import org.springframework.data.repository.CrudRepository;
+
+public interface SongRepository extends CrudRepository<Song, Long>{
 }
